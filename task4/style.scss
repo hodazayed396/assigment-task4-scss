@@ -1,0 +1,56 @@
+ // styles.scss
+$card-bg-color: #f9f9f9;
+$card-border-radius: 8px;
+$card-padding: 20px;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$button-bg-color: #1fc57b;
+$button-color: #fff;
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: $card-bg-color;
+    border-radius: $card-border-radius;
+    padding: $card-padding;
+    width: 300px;
+    text-align: center;
+    box-shadow: $card-shadow;
+
+    .icon {
+        font-size: 30px;
+        color: #add8e6;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: $button-bg-color;
+        color: $button-color;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width:auto;
+        font-size: 1em;
+        
+        &:hover {
+            background-color: darken($button-bg-color, 10%);
+        }
+    }
+}
